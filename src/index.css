@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+* {
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+/* body > * {
+  @apply px-4 md:px-10 lg:px-20 xl:px-32;
+} */
+.inner {
+  @apply p-4 md:p-8  lg:px-20 xl:px-32;
+}
+.inner-x {
+  @apply px-4 md:px-8 lg:px-20 xl:px-32;
+}
+.digital_grid_item:hover div {
+  visibility: visible;
+}
+.assymetric :nth-child(3n + 2) img {
+  @apply md:aspect-[10/12];
+}
+.assymetric :nth-child(3n + 3) img {
+  @apply lg:aspect-[11/12];
+}
+@tailwind utilities;
